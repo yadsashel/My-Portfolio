@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yazide Salhi</title>
     <link rel="stylesheet" href="Yad.css">
-    <link rel="icon" href="images/_Coding Yad .png">
+    <link rel="icon" type="images/png" href="images/_Coding Yad .png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">   
@@ -14,26 +14,24 @@
 </head>
 <body> 
     
-    <header>
-      <!-- main-icon -->
-      <img class="main-icon" src="./images/Yad----coding.png" alt="">
-        
-      <!-- navbar -->
-       <nav class="Nav-Section">
+  <header>
+    <!-- Main Icon -->
+    <img class="main-icon" src="./images/Yad----coding.png" alt="Logo">
+
+    <!-- Navbar -->
+    <nav class="Nav-Section">
         <ul class="Nav-List">
-          <li class="Nav-Item"><a href="#home-container">About Me</a></li>
-          <li class="Nav-Item"><a href="#my-work_section">My Work</a></li>
-          <li class="Nav-Item"><a href="#contact-me">Contact Me</a></li>
+            <li class="Nav-Item"><a href="#home-container">About Me</a></li>
+            <li class="Nav-Item"><a href="#my-work_section">My Work</a></li>
+            <li class="Nav-Item"><a href="#contact-me">Contact Me</a></li>
         </ul>
-      </nav>
-    </header>
-     
-     <!-- Hamburger Icon for Mobile -->
-     <div class="hamburger" onclick="toggleNav()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+
+        <div class="menu-icon">
+          <i class="fa-solid-fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+</header>
+    
 
    <!-- Home sections -->
 
@@ -47,10 +45,10 @@
     <h1 class="name">Yazide Salhi</h1>
   <h4 class="Special"><span class="Hov_1">I'm</span> <span class="Hov_2">a</span> <span class="Hov_3">Software</span> <span class="Hov_4">Engineer</span></h4>
   <div  class="about-mySelf"> 
-    <p>I'm an aspiring back-end developer with a strong foundation in programming,<br> data structures, and systems management, plus some hands-on experience in front-end tools.<br> I've worked with C, Python, and JavaScript,<br> covering both foundational and advanced topics in back-end like databases, Node.js, <br>and authentication. Although my focus is back-end, I also have a grounding in front-end essentials,<br> like HTML, CSS, and JavaScript, aiming to build complete, efficient web applications.</p>
+    <p>I'm an aspiring back-end developer with a strong foundation in programming,<br>data structures, and systems management, plus some hands-on experience in front-end tools.<br> I've worked with C, Python, and JavaScript,<br> covering both foundational and advanced topics in back-end like databases, Node.js, <br>and authentication. Although my focus is back-end, I also have a grounding in front-end essentials,<br> like HTML, CSS, and JavaScript, aiming to build complete, efficient web applications.</p>
    </div>
   </section>
-    <script src="./script.js" ></script> 
+    
 
     <!-- My work Section -->
     <section class="my-work-container" id="my-work_section">
@@ -92,7 +90,7 @@
           Explore my work in redefining possibilities through innovation and cutting-edge technology.
         </p>
     
-        <div class="projects">
+        <div class="projects">           
           <!-- Column 1: Existing Work -->
           <div class="projects-column">
             <h2 class="column-title">Implemented Work</h2>
@@ -104,7 +102,7 @@
               <span class="idea-title">Scalable APIs</span>
               <li class="idea-desc">Scalable APIs for Mobile Apps</li>
             </ul>
-          </div>
+          </div>                        
     
           <!-- Column 2: Future Ideas -->
           <div class="projects-column">
@@ -167,13 +165,14 @@
           <a href="https://www.youtube.com/@CodigYad" target="_blank" class="icon youtube">
             <i class="fab fa-youtube"></i>
           </a>
-        </div>
+        </div>  
         <a href="./Cv-Resume.pdf" class="btn download-cv" target="_blank">
           Download My CV
         </a>
       </div>
     </section>
       
-
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="./style.css"></script>
 </body>
 </html>

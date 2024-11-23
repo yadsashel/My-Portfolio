@@ -42,17 +42,23 @@ body {
 
 /*styling the navbar*/
 .Nav-Section {
+    padding: 10px 30px;
     display: flex;
-    position: sticky;
+    align-items: flex-end;
     justify-content: flex-end;
+    position: relative;
+    height: 80%;
+    width: 100%;
 }
 
+.Nav-Section,
 .Nav-List {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 40px;
-    padding: 10px;
+  float: right;  
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
 }
 
 .Nav-Item {
@@ -65,6 +71,7 @@ body {
     text-decoration: none;
     color: var(--seconday-color);
     font-size: 20px;
+    cursor: pointer;
     transform: translateY(30px);
 }
 
@@ -78,6 +85,18 @@ body {
     animation: ColorNav 1s infinite alternate;
 }
 
+.menu-icon{
+  display: none;
+}
+
+.menu-icon i{
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.fa-solid-fa-bars {
+  color: var(--primary-color);
+}
 
 @keyframes ColorNav {
     0% {
@@ -142,7 +161,7 @@ body {
 
     60% {
         border-color: var(--fourthly-color);
-    }
+    }  
 
     80% {
         border-color: var(--fithly-color);
@@ -258,35 +277,25 @@ body {
     display: grid;
     color: var(--primary-color);
     padding-top: 100px;
-    backdrop-filter: blur(300px);
 }
 
+
+/* Default styling for larger screens */
 .about-mySelf p {
-    text-align: left;
-    line-height: 50px;
-    white-space: nowrap;
-    letter-spacing: 1px;overflow: hidden;
-    border-right: 30px solid var(--seconday-color);
-    box-shadow: 5px 0px 5px var(--primary-color);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    animation: typing 5s steps(30) 1s infinite;
+  text-align: left;
+  line-height: 50px;
+  white-space: normal; /* Allows text to wrap onto multiple lines */
+  overflow: hidden; /* Ensures no content overflows */
+  box-shadow: 5px 0px 5px var(--primary-color);
+  font-size: 18px; /* Default font size for desktop */
 }
+
 
 .about-mySelf p:hover {
     animation-play-state: paused;
     box-shadow: 8px 0px 8px ;
 }
 
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
 
 /*my work section*/
 .my-work-container {
@@ -634,95 +643,189 @@ body {
   }
 }
 
-
-/*smart phone views*/
-/* Default styles (for larger screens) */
-body {
-  font-family: Krub;
-  margin: 0;          
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.main-icon {
-  /* Styles for main icon, which will be centered or placed appropriately on larger screens */
-  text-align: center;
-}
-
 /* Mobile styles (for devices with a max width of 768px) */
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    padding: 10px;
-  }
-
-  .container {
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  /* Main icon on the left side for mobile */
+@media (max-width: 1118px) {
   .main-icon {
-    display: inline-block;
-    padding-left: 10px;
-  }
-
-  /* Navbar styles */
-  .nav {
-    display: none; /* Hide the regular nav on mobile */
-    text-align: center;
-  }
-
-  /* Hamburger icon container */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
+    transform: scale(2);
+    left: 8%;
     top: 10px;
-    right: 10px;
   }
+  
+ .home-container {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+   margin-left: 100px;
+   transform: scale(1);
+   top: 250px;
+   left: 20px;
+ }
 
-  .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-  }
-
-  /* Show the nav when hamburger is clicked */
-  .nav.active {
-    display: block;
-  }
-
-  .nav ul {
-    padding: 0;
-    list-style: none;
-    text-align: left;
-  }
-
-  .nav li {
-    margin: 10px 0;
-  }
-
-  .nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-  }
+ .main-image {
+  height: 50%;
+  width: 50%;
+  margin-top: -200px;
+  transform: scale(0.7);
+ } 
 }
 
-/* Styles for very small mobile screens (max-width 480px) */
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 12px;
+@media (max-width: 944px) {
+  .main-icon {
+    transform: scale(2);
+    left: 6%;
+    top: 10px;
   }
 
-  .container {
-    padding: 10px;
+   
+ .home-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-left: 100px;
+    transform: scale(1);
+    top: 250px;
+    left: 20px;
+ }
+ 
+ .main-image {
+    height: 50%;
+    width: 50%;
+    margin-top: -200px;
+    transform: scale(0.7);
+ }
+ 
+ .main-titles-me {
+  display: flex;
+  position: absolute; /* Switch from absolute to relative for easier alignment */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align content to the left */
+  top: 150px; /* Reset any unnecessary positioning */
+  margin-left: 10px; /* Add spacing from the left */
+  
+}
+
+.name,
+.Special {
+  font-size: 1.5rem; /* Resize the text for smaller screens */
+  transform: scale(1); /* Reset the scale for readability */
+  text-align: left; /* Ensure text aligns to the left */
+}
+
+.about-mySelf {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 1rem; /* Reduce paragraph font size */
+  line-height: 1.5; /* Adjust line spacing for readability */
+  margin-right: -50px;
+  text-align: left; /* Align text to the left */
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+}
+
+.about-mySelf p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  border: none;
+  font-size: 14px; /* Smaller font for mobile */
+  line-height: 30px; /* Adjust line height */
+  white-space: normal; /* Allow wrapping of long lines */
+  padding: 10px; ;
+  transform: scale(0.9);
+  width: 150%;
+  height: 100%;
+}
+
+.my-work-container {
+  text-align: center;
+  margin-top: 1000px;
+  transform: scale(0.9);
+}
+
+.section-title,
+.section-description-p {
+  transform: scale(0.8);
+}
+
+#innovating-the-future {
+  transform: scale(0.8);
+  margin-right: 20px;
+  overflow-x: auto;
+}
+}
+
+@media (max-width:600px) {
+  
+  .main-icon {
+    transform: scale(2);
+    left: 0;
+    top: 10px;
   }
+
+  .Nav-Section,
+  .Nav-List {
+      position: relative;
+      top: 0px;
+      flex-direction: row;
+      margin-left: 150px;
+      margin-bottom: 20px; 
+      transform: scale(0.9);
+      gap: 0;
+      overflow: hidden;
+  }
+  .Nav-Section,
+  .Nav-List,
+  .Nav-Item {
+      padding: 15px;
+      padding-top: 0;
+      font-size: 3px;
+  }
+  
+  .Nav-Item a {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .menu-icon{
+      display: block;
+      color: var(--primary-color);
+  }
+  #menuList{
+      transition: all 0.5s;
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-left: 100px;
+    transform: scale(1);
+    top: 200px;
+    left: 20px;
+ }
+  
+  .main-image {
+    height: 50%;
+    width: 50%;
+    margin-top: -200px;
+    transform: scale(0.7);
+ }
+
+ #contact-me {
+  margin-bottom: 200px;
+  transform: scale(1);
+ }
+
+ #contact-me .container {
+  transform: scale(0.8);
+ }
 }
