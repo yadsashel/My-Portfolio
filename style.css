@@ -792,6 +792,7 @@ body {
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
+    transform: scale(0.7);
   }
 
   .menu-icon{
@@ -828,4 +829,15 @@ body {
  #contact-me .container {
   transform: scale(0.8);
  }
+}
+
+@media (max-width: 400px) {
+  .Nav-Item a {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transform: scale(0.7);
+    margin-right: -50px;
+  }
 }
