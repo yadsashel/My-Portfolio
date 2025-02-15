@@ -1,178 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yazide Salhi</title>
-    <link rel="stylesheet" href="Yad.css">
-    <link rel="icon" type="images/png" href="images/_Coding Yad .png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">   
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nanum+Gothic+Coding&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>ELYAZID SALHI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    
-  <header>
-    <!-- Main Icon -->
-    <img class="main-icon" src="./images/Yad----coding.png" alt="Logo">
+<body>
+  
+              <!-- starting with navbar -->          
+                <!-- NAVBAR -->
+                <nav class="navbar-pro">
+                  <ul class="nav-links-pro">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#About Me">About Me</a></li>
+                    <li><a href="{{url_for ('analytics') }}">My Work</a></li>
+                    <li><a href="{{url_for ('addtransaction') }}">Contact Me</a></li>
+                  </ul>
+                </nav>
+                
 
-    <!-- Navbar -->
-    <nav class="Nav-Section">
-        <ul class="Nav-List">
-            <li class="Nav-Item"><a href="#home-container">About Me</a></li>
-            <li class="Nav-Item"><a href="#my-work_section">My Work</a></li>
-            <li class="Nav-Item"><a href="#contact-me">Contact Me</a></li>
-        </ul>
+               <!-- Toggle checkbox for hamburger -->
+               <input type="checkbox" id="navbarToggle">
+              
+               <!-- Hamburger icon for toggle -->
+               <label for="navbarToggle" class="hamburger">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+               </label>
+              
+               <!-- Side navbar -->
+               <div class="side-navbar">
+                   <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#MyWork">My Work</a></li>
+                    <li><a href="#ContactMe">Contact Me</a></li>
+                    <li><a href="#About Me">About Me</a></li>
+                   </ul>
+               </div>
 
-        <div class="menu-icon">
-          <i class="fa-solid-fa-bars" onclick="toggleMenu()"></i>
-        </div>
-    </nav>
-</header>
-    
 
-   <!-- Home sections -->
+               <!-- main section -->
+              <section class="main_sectoin">
+                <!-- main  image -->
+                <div>
+                  <img src="./images/image.jpeg" alt="">
+                </div>
 
-   <!-- main image section -->
-   <section class="home-container" id="home-container">
-    <img class="main-image" src="images/PXL_20231112_154714014~3.jpg" alt="">
-  </section>
+                <!-- main info -->
+                 <div class="main__info">
+                  <h2 class="main__tit">Hi There!</h2>
+                  <h1 class="main_tonre">I'm <span>Software Developer</span></h1>
+                  <h2 class="main__tit">I build amazing things</h2>
+                  <a href="#ContactMe" class="main__btnn">Contact Me</a>
+                 </div>
+                </section>
 
-   <!-- main titles section -->
-  <section class="main-titles-me">
-    <h1 class="name">Yazide Salhi</h1>
-  <h4 class="Special"><span class="Hov_1">I'm</span> <span class="Hov_2">a</span> <span class="Hov_3">Software</span> <span class="Hov_4">Developer</span></h4>
-  <div  class="about-mySelf"> 
-    <p>I'm an aspiring back-end developer with a strong foundation in programming,<br>data structures, and systems management, plus some hands-on experience in front-end tools.<br> I've worked with C, Python, and JavaScript,<br> covering both foundational and advanced topics in back-end like databases, Node.js, <br>and authentication. Although my focus is back-end, I also have a grounding in front-end essentials,<br> like HTML, CSS, and JavaScript, aiming to build complete, efficient web applications.</p>
-   </div>
-  </section>
-    
+                <!-- My about me  section -->
+              <section class="work__prg">
+                <div>
+                  <img src="./images/PXL_20230309_170643452.MP~4.jpg" alt="">
+                </div>
+                <div class="work__tit">
+                  <h2 class="work__aprt">Who am I?</h2>
+                  <h1 class="work__main__tit">I'm Yazide Salhi, a full stack software engineer <br> specialist in backend development.</h1>
+                  <p class="work__par">I am a Full-Stack Software Engineer specializing in backend development,<br>  
+                    skilled in Python (Flask), JavaScript (Node.js), and database management.<br>  
+                    I build scalable APIs, optimize performance, and ensure security best practices.<br>  
+                    Experienced in React, Vue.js, and DevOps tools like AWS & Docker.<br><br> 
+                    <span class="spama"><span class="qoutes">❝</span> Iam always eager to learn, innovate, and contribute to impactful projects.<span class="qoutes">❞</span></span>  
+                    </p>
+                </div>
+              </section>
 
-    <!-- My work Section -->
-    <section class="my-work-container" id="my-work_section">
-      <h2 class="section-title">My Work</h2>
-      <p class="section-description-p">Here are some of the projects I've worked on. Each one reflects my passion for coding, problem-solving, and design.</p>
-      
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <img src="./images/Screenshot 2024-10-28 164932.png" alt="Project 1 Screenshot" class="project-image">
-          <h3 class="project-title">Project One</h3>
-          <p class="project-description-cards">Task Master is a web application for managing daily tasks. Users can add, edit, delete, and mark tasks as complete, making it easier to stay organized and productive Built using Python Flask and MongoDB and JavaScript.</p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
-        
-        <!-- Project 2 -->
-        <div class="project-card">
-          <img src="./images/Screenshot 2025-01-07 163927.png" alt="Project 2 Screenshot" class="project-image">
-          <h3 class="project-title">Project Two</h3>
-          <p class="project-description-cards">a backend service designed to help manage personal finances effectively. It provides APIs for user registration, login, and managing financial tasks, such as tracking expenses, budgets, and savings. Built using Python Flask and MongoDB, and JavaScript moreover charts.js for graphs.</p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
+              <!-- My Work section -->
+               <section class="wrkk__kay">
+                <h1 class="cards_crd">My Work</h1>
 
-        <!-- Project 3 -->
-        <div class="project-card">
-          <img src="./images/Screenshot 2025-01-30 214431.png" alt="Project 3 Screenshot" class="project-image">
-          <h3 class="project-title">Project Three</h3>
-          <p class="project-description-cards">a comprehensive solution designed to facilitate remote healthcare consultations, patient management, and data analytics. This platform aims to improve accessibility to healthcare professionals and streamline patient record management, enhancing overall efficiency in the healthcare system, build using Python Flask and MongoDB, and JavaScript MySQL.</p>
-          <span class="link-color-changed"><a href="#" class="project-link">View Project</a></span>
-        </div>
-      </div>
-    </section>
+                <div class="kay__kay">
 
-    <!-- showcasing skills section -->
-    <section id="innovating-the-future">
-      <div class="container">
-        <h1 class="section-title">Innovating the Future</h1>
-        <p class="intro-text">
-          Explore my work in redefining possibilities through innovation and cutting-edge technology.
-        </p>
-    
-        <div class="projects">           
-          <!-- Column 1: Existing Work -->
-          <div class="projects-column">
-            <h2 class="column-title">E-Commerce Automation Suite (Upcoming)</h2>
-            <ul class="work-list">
-              <span class="idea-title">A full-stack e-commerce automation system with features like AI-driven price optimization, inventory tracking, and predictive analytics.</span>
-              <li class="idea-desc">OmniFlow – AI-Powered Workflow Automation System (Flagship Project – Coming Soon)</li>
-              <span class="idea-title">Web App With React</span>
-              <li class="idea-desc">Interactive Web Applications with React</li>
-              <span class="idea-title">Scalable APIs</span>
-              <li class="idea-desc">Scalable APIs for Mobile Apps</li>
-            </ul>
-          </div>                        
-    
-          <!-- Column 2: Future Ideas -->
-          <div class="projects-column">
-            <h2 class="column-title">Innovative Ideas</h2>
-            <ul class="ideas-list">
-              <li class="idea">
-                <span class="idea-title">AI-Powered Career Mentor</span>
-                <p class="idea-desc">
-                  A virtual assistant that designs personalized career paths using AI-driven insights.
-                </p>
-              </li>
-              <li class="idea">
-                <span class="idea-title">Blockchain Digital Identity</span>
-                <p class="idea-desc">
-                  A decentralized platform for secure, verifiable credentials for job seekers.
-                </p>
-              </li>
-              <li class="idea">
-                <span class="idea-title">Smart Energy Optimization</span>
-                <p class="idea-desc">
-                  An IoT system to monitor and reduce energy consumption in real-time.
-                </p>
-              </li>
-              <li class="idea">
-                <span class="idea-title">Immersive AR/VR Therapy</span>
-                <p class="idea-desc">
-                  Virtual therapy solutions for stress relief and physical rehabilitation.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    
+                  <!-- poject 1 -->
+                  <div class="cards__work">
+                      <img src="./images/Screenshot 2025-01-30 214431.png" alt="">
+                      <h3 class="card__tetit">Telealth Collaboration Platform</h3>
+                      <p class="card__pr_par">Telehealth Collaboration Platform is a comprehensive solution designed <br> to facilitate remote healthcare consultations, patient management, and data analytics. <br><br>This platform aims to improve accessibility to healthcare professionals and streamline patient record management. <br><br> enhancing overall efficiency in the healthcare system.</p>
+                      <div class="icons">
+                        <img src="./icons/python.png" alt="Python">
+                        <img src="./icons/css-3_732190.png" alt="CSS">
+                        <img src="./icons/html-5_5968267.png" alt="HTML">
+                        <img src="./icons/icons8-mysql-48.png" alt="MySQL">
+                        <img src="./icons/js_5968292.png" alt="JavaScript">
+                    </div>
+                    <a href="https://telehealth-collaboration-platform-mvp.onrender.com" target="_blank" >View Project</a>
+                  </div>
 
-    <!-- contact me section -->
-    <section id="contact-me">
-      <div class="container">
-        <h1 class="section-title">Contact Me</h1>
-        <p class="intro-text">
-          Get in touch with me for collaborations, projects, or just to say hi! I'm active on these platforms:
-        </p>
-        <div class="social-icons">
-          <a href="https://x.com/YazideSalhi" target="_blank" class="icon twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yazide-salhi-8a57a42b4/" target="_blank" class="icon linkedin">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/yad_sashel/" target="_blank" class="icon instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100083644514192" target="_blank" class="icon facebook">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://github.com/yadsashel" target="_blank" class="icon github">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.youtube.com/@CodigYad" target="_blank" class="icon youtube">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>  
-        <a href="./ELYAZID SALHI-RESUME.docx" class="btn download-cv" target="_blank">
-          Download My CV
-        </a>
-      </div>
-    </section>
-      
-    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
-    <script src="./style.css"></script>
+                   <!-- poject 2 -->
+                   <div class="cards__work">
+                      <img src="./images/Screenshot 2024-10-28 164932.png" alt="">
+                      <h3 class="card__tetit">Task Master</h3>
+                      <p class="card__pr_par">Task Master is a web application for managing daily tasks. <br><br> Users can add, edit, delete, and mark tasks as complete. <br><br> making it easier to stay organized and productive.</p>
+                      <div class="icons">
+                        <img src="./icons/python.png" alt="Python">
+                        <img src="./icons/css-3_732190.png" alt="CSS">
+                        <img src="./icons/html-5_5968267.png" alt="HTML">
+                        <img src="./icons/icons8-mongodb-48.png" alt="monogodb">
+                        <img src="./icons/js_5968292.png" alt="JavaScript">
+                    </div>
+                    <a href="https://task-master-pdbj.onrender.com" target="_blank" >View Project</a>
+                    </div>
+
+                     <!-- poject 3 -->
+                   <div class="cards__work">
+                    <img src="./images/Screenshot 2025-01-07 163927.png" alt="">
+                    <h3 class="card__tetit">FinTracker API Simplifying Personal Finance Management</h3>
+                    <p class="card__pr_par">FinTrack API is a backend service designed to help manage personal finances effectively. <br><br> It provides APIs for user registration, login, and managing financial tasks, such as tracking expenses, budgets, and savings.</p>
+                      <div class="icons">
+                        <img src="./icons/python.png" alt="Python">
+                        <img src="./icons/css-3_732190.png" alt="CSS">
+                        <img src="./icons/html-5_5968267.png" alt="HTML">
+                        <img src="./icons/icons8-mongodb-48.png" alt="monogodb">
+                        <img src="./icons/js_5968292.png" alt="JavaScript">
+                    </div>
+                    <a href="https://fintrack-api-simplifying-personal.onrender.com" target="_blank" >View Project</a>
+                </div>
+                </div>
+               </section>
+
+
+               <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <img src="./icons/python.png" alt="Python" class="skill-icon">
+                    <img src="./icons/js_5968292.png" alt="JavaScript" class="skill-icon">
+                    <img src="./icons/css-3_732190.png" alt="CSS" class="skill-icon">
+                    <img src="./icons/html-5_5968267.png" alt="HTML" class="skill-icon">
+                    <img src="./icons/icons8-mysql-48.png" alt="MySQL" class="skill-icon">
+                    <img src="./icons/icons8-mongodb-48.png" alt="MongoDB" class="skill-icon">
+                    <img src="./icons/icons8-react-100.png" alt="React" class="skill-icon">
+                    <img src="./icons/icons8-node-js-48.png" alt="Node.js" class="skill-icon">
+                    <img src="./icons/nextjs.svg" alt="Next.js" class="skill-icon">
+                    <img src="./icons/icons8-bash-48.png" alt="Bash" class="skill-icon">
+                    <img src="./icons/icons8-redis-48.png" alt="Redis" class="skill-icon">
+                    <img src="./icons/icons8-c-48.png" alt="C Language" class="skill-icon">
+                    <img src="./icons/icons8-typescript-48.png" alt="TypeScript" class="skill-icon">
+                </div>
+            </section>         
+            
+<!-- Social Media Section -->
+<footer>
+<section class="social-media">
+  <h1>Contact Me</h1>
+  <div class="socialss_kaa">
+  <a href="https://github.com/yadsashel" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/elyazid-salhi-8a57a42b4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://twitter.com/YazideSalhi" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://facebook.com/CodingYad" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.instagram.com/yad_sashel/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/@CodigYad/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <p class="email">📩 yadsashelemail@example.com</p>
+</section>
+</footer>
+          
 </body>
 </html>
