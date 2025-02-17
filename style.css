@@ -512,8 +512,12 @@ input[type="checkbox"] {
 
   .main_sectoin {
     flex-direction: column;
-    width: auto;
+    width: 50vh;
     height: auto;
+  }
+  .main_sectoin img {
+    width: 29vh;
+    height: 36vh;
   }
 
 
