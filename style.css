@@ -368,7 +368,7 @@ input[type="checkbox"] {
 
 #skills {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px;
   background: #0a192f; /* Deep dark blueprint color */
   color: white;
   position: relative;
@@ -512,10 +512,14 @@ input[type="checkbox"] {
 
   .main_sectoin {
     flex-direction: column;
-    width: auto;
+    width: 40vh;
     height: auto;
   }
 
+  .main_sectoin img {
+    width: 19vh;
+    height: 19vh;
+  }
 
   .main__info {
     height: 192px;
@@ -523,6 +527,11 @@ input[type="checkbox"] {
 
   .work__prg {
     flex-direction: column;
+  }
+
+  .work__prg img {
+    width: 28vh;
+    height: 41vh;
   }
 
   .kay__kay {
