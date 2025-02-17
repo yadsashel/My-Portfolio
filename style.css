@@ -534,7 +534,21 @@ input[type="checkbox"] {
     height: 41vh;
   }
 
+  .cards__work {
+    width: 73vh;
+  }
+
   .kay__kay {
     flex-direction: column;
+    padding: 40px;
+  }
+
+  #skills {
+    margin: 20px;
+  }
+
+  footer {
+    scale: 0.8;
+    width: 55vh;
   }
 }
