@@ -535,7 +535,8 @@ input[type="checkbox"] {
   }
 
   .cards__work {
-    width: 73vh;
+    width: 40vh;
+    height: 70vh;
   }
 
   .kay__kay {
