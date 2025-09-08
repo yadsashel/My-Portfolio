@@ -1,6 +1,0 @@
-Generated social media content based on your prompt: "I want a full blog post about making money to put on twitter
-"
-
-This is a sample generated content that would be created by the AI system. In a real implementation, this would connect to an AI service like OpenAI, Claude, or similar to generate actual content based on your specifications.
-
-The content would be tailored to your specific requirements and formatted appropriately for the selected content type.

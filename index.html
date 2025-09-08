@@ -205,7 +205,7 @@
                         </div>
 
                         <div class="company-buttons">
-                            <button class="btn btn-outline" onclick="window.open('https:https://www.linkedin.com/zaneth-pulse/', '_blank')">
+                            <button class="btn btn-outline" onclick="window.open('https://www.linkedin.com/company/zaneth-pulse/', '_blank')">
                                 <i class="fas fa-external-link"></i>
                                 LinkedIn Page
                             </button>
@@ -337,13 +337,13 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/project-placeholder.jpg" alt="AI Prototype" />
+                        <img src="assets/netlify-1.app.png" alt="AI Prototype" />
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link">
+                                <a href="https://aicontetntgenerated.netlify.app/" class="project-link">
                                     <i class="fas fa-external-link"></i>
                                 </a>
-                                <a href="#" class="project-link">
+                                <a href="https://github.com/yadsashel/AI-Content-Generator" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -355,12 +355,12 @@
                             Machine learning model for automated content generation with natural language processing.
                         </p>
                         <div class="tech-stack">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">TensorFlow</span>
-                            <span class="tech-badge">FastAPI</span>
-                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">React + Vite</span>
+                            <span class="tech-badge">mistralai/Mistral-7B-Instruct-v0.1</span>
+                            <span class="tech-badge">FastAPI  (REST API with async endpoints)</span>
+                            <span class="tech-badge">Supabase (PostgreSQL)</span>
                         </div>
-                        <div class="project-status status-planning">Planning</div>
+                        <div class="project-status status-completed">Completed</div>
                     </div>
                 </div>
             </div>
@@ -381,32 +381,45 @@
             </div>
 
             <div class="contact-grid">
-                <!-- Contact Form -->
+              <!-- Contact Form -->
                 <div class="contact-form-container">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
+                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="460d29d5-d48d-4601-97f8-5008ce5d2be1">
 
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
+                    <!-- Force submissions to go to your email -->
+                    <input type="hidden" name="to" value="webusineservices@gmail.com">
 
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
+                    <!-- Add a friendly sender name -->
+                    <input type="hidden" name="from_name" value="Effluve de Parfum Website">
 
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
+                    <!-- Optional: redirect after submit -->
+                    <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html">
 
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
 
                 <!-- Contact Info -->
                 <div class="contact-info">
